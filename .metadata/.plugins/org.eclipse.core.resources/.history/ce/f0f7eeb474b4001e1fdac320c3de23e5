@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Bai2 {
+	public static void main() {
+		float dai, rong, chuVi, dienTich, canhNganNhat;
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Nhập chiều dài: ");
+		dai = scanner.nextFloat();
+		System.out.print("Nhập chiều rộng: ");
+		rong = scanner.nextFloat();
+		chuVi = (dai+rong)*2;
+		dienTich = dai*rong;
+		canhNganNhat = Math.min(dai, rong);
+		System.out.print("Chu vi hình chữ nhật: %f", chuVi);
+		System.out.print("Diện tích hình chữ nhật: %f", dienTich);
+		System.out.print("Cạnh nhỏ nhất: %f", canhNganNhat);
+	}
+}
