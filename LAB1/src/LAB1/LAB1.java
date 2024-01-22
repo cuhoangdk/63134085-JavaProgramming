@@ -1,3 +1,4 @@
+package LAB1;
 import java.util.Scanner;
 
 public class LAB1 {
@@ -49,9 +50,9 @@ public class LAB1 {
 	}
 	public static void main(String[] args) {
 	    LAB1 lab = new LAB1();
-	    lab.Bai1();
-	    lab.Bai2();
-	    lab.Bai3();
+	    //lab.Bai1();
+	    //lab.Bai2();
+	    //lab.Bai3();
 	    lab.Bai4();
 	}
 }

@@ -1,3 +1,4 @@
+package LAB2;
 import java.util.Scanner;
 public class LAB2 {
 	public void giaiPTB1() {
