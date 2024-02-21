@@ -80,11 +80,12 @@ public class BMICalculator extends JFrame {
         try {
             double height = Double.parseDouble(heightField.getText());
             double weight = Double.parseDouble(weightField.getText());
-
-            double bmi = weight / (height * height);          
             if (height <= 0 || height>3 || weight<=0) {
             	commentLabel.setText(String.format("Bạn có phải con người không?"));  
             }
+            else {
+            double bmi = weight / (height * height);          
+            
             if (bmi<16) {
             	commentLabel.setText(String.format("Bạn gầy độ III"));
             }
@@ -109,7 +110,8 @@ public class BMICalculator extends JFrame {
             else{
             	commentLabel.setText(String.format("Bạn Béo phì độ III"));
             }
-            resultLabel.setText(String.format("BMI: %.2f", bmi));           
+            resultLabel.setText(String.format("BMI: %.2f", bmi));    
+            }
         } catch (NumberFormatException ex) {
             resultLabel.setText("Số đã nhập không hợp lệ");
         }
